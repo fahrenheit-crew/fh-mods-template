@@ -2,7 +2,7 @@
 
 namespace Fahrenheit.Mods.Template;
 
-[FhLoad(FhGameType.FFX)]
+[FhLoad(FhGameId.FFX)]
 public class TemplateModule : FhModule {
     /* [fkelava 27/6/25 00:30]
      * A module's constructor must be parameterless. Use it to initialize local fields and objects.
