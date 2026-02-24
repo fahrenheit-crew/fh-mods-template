@@ -14,6 +14,6 @@ global using System.IO;
  * Importing both at once may require you to define aliases to resolve ambiguous types.
  */
 
-global using Fahrenheit.Core;
-//global using Fahrenheit.Core.FFX;
-//global using Fahrenheit.Core.FFX2;
+global using Fahrenheit;
+//global using Fahrenheit.FFX;
+//global using Fahrenheit.FFX2;
