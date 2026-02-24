@@ -68,15 +68,7 @@
     Project references MUST have Private set to "false" and ExcludeAssets set to "runtime;native".
     -->
     <ItemGroup>
-        <ProjectReference Include="..\..\core\framework\Fahrenheit.Core.csproj">
-            <Private>false</Private>
-            <ExcludeAssets>runtime;native</ExcludeAssets>
-        </ProjectReference>
-        <ProjectReference Include="..\..\core\ffx\Fahrenheit.Core.FFX.csproj">
-            <Private>false</Private>
-            <ExcludeAssets>runtime;native</ExcludeAssets>
-        </ProjectReference>
-        <ProjectReference Include="..\..\core\ffx2\Fahrenheit.Core.FFX2.csproj">
+        <ProjectReference Include="..\..\core\fh\Fahrenheit.csproj">
             <Private>false</Private>
             <ExcludeAssets>runtime;native</ExcludeAssets>
         </ProjectReference>
