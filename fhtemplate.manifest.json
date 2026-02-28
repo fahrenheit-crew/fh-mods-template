@@ -4,7 +4,7 @@
     "Desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "Authors": "The Fahrenheit contributors",
     "Version":"1.0.0-alpha",
-    "Link":"https://github.com/peppy-enterprises/fh-mods-template",
+    "Link":"https://github.com/fahrenheit-crew/fh-mods-template",
     "Dependencies":[],
     "LoadAfter":[],
     "Flags":"SEPARATE_SAVES"
