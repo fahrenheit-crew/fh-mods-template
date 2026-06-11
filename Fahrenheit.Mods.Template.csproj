@@ -1,7 +1,0 @@
-﻿<Project Sdk="Fahrenheit.Sdk/1.0.0-alpha08">
-    <PropertyGroup>
-        <AssemblyName>fhtemplate</AssemblyName>
-        <AssemblyTitle>Template Mod</AssemblyTitle>
-        <Product>Template Mod</Product>
-    </PropertyGroup>
-</Project>
