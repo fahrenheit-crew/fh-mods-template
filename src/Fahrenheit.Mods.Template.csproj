@@ -1,0 +1,91 @@
+﻿<!--
+Welcome to an example mod project file for Fahrenheit!
+
+This file describes your mod and configures certain build-time
+properties thereof. It is also used as input to create your mod's
+"manifest", which Fahrenheit requires to load it.
+
+A 'project' consists of a number of MSBuild 'properties' in 'groups'.
+See https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-properties?view=visualstudio.
+-->
+
+<!--
+Mod projects must use the Fahrenheit SDK. Think of it as a helper
+that sets a number of required properties so you don't have to.
+
+Each version of the SDK corresponds to a version of Fahrenheit.
+To choose the version of Fahrenheit to build against, change the 'Sdk' value below.
+
+You can see all available versions at https://www.nuget.org/packages/Fahrenheit.Sdk/#versions-body-tab.
+It's highly recommended that you always choose the latest one!
+-->
+<Project Sdk="Fahrenheit.Sdk/1.0.0-alpha11">
+    <!--
+    Below are the properties you will commonly want to edit in a mod project.
+
+    Fahrenheit co-opts certain MSBuild properties and gives them a special meaning.
+    Some of them are expected not to change after releasing your mod; be sure to set them appropriately!
+
+    Certain properties are optional. You shouldn't delete them, but simply leave their values empty.
+    You must not override any property that appears in the SDK.
+    -->
+    <PropertyGroup>
+        <!--
+        The AssemblyName is your mod's unique ID, and the name of the resulting DLL on disk.
+        It will appear in the manifest.
+
+        It:
+        - MUST be globally unique. No two mods may share an assembly name.
+        - SHOULD be concise and MUST contain no non-alphanumeric characters.
+        - MUST not be changed after your mod's release.
+        -->
+        <AssemblyName>fhtemplate</AssemblyName>
+
+        <!--
+        The AssemblyTitle and Product are the 'friendly name' of your mod.
+        This is what you might call it when publishing it somewhere.
+
+        Both 'Product' and 'AssemblyTitle' are used in Windows properties (File description, Product name)
+        'AssemblyTitle' will appear in the manifest. Unlike the assembly name, changes are permitted.
+        -->
+        <AssemblyTitle>Template Mod</AssemblyTitle>
+        <Product>Template Mod</Product>
+
+        <!--
+        The Description and Version will appear in the manifest. 
+        The Version must be a valid NuGet version string. https://learn.microsoft.com/en-us/nuget/concepts/package-versioning?tabs=semver20sort
+        
+        The SDK will append the last known commit hash to the version if your project is under source control.
+        -->
+        <Description>This is a description of your mod.</Description>
+        <Version>1.0.0-alpha</Version>
+
+        <!--
+        If your mod is under source control, set RepositoryUrl and RepositoryType accordingly.
+
+        Authors is a comma-separated list. It will appear in the manifest.
+        -->
+        <Authors>You!</Authors>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/fahrenheit-crew/fh-mods-template</RepositoryUrl>
+
+        <!--
+        These properties are completely unique to Fahrenheit.
+
+        FhManifestFlags is a comma-separated list of any flags your mod should set.
+        See 'FhManifestFlags' in Fahrenheit for a list of available flags.
+
+        The home page appears in the manifest. If RepositoryUrl is specified above,
+        it takes unconditional precedence over any home page specified here.
+        -->
+        <FhManifestHomePage>https://github.com/fahrenheit-crew/fh-mods-template</FhManifestHomePage>
+        <FhManifestFlags>SEPARATE_SAVES</FhManifestFlags>
+    </PropertyGroup>
+</Project>
+
+<!--
+For a list of further properties, see:
+https://learn.microsoft.com/en-us/visualstudio/msbuild/common-msbuild-project-properties?view=visualstudio.
+
+If you have any questions, don't hesitate to contact us or file an issue!
+-->
