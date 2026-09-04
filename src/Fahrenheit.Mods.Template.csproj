@@ -53,9 +53,9 @@ It's highly recommended that you always choose the latest one!
 
         <!--
         The Description and Version will appear in the manifest. 
-		The Version must be a valid NuGet version string. https://learn.microsoft.com/en-us/nuget/concepts/package-versioning?tabs=semver20sort
-		
-		The SDK will append the last known commit hash to the version if your project is under source control.
+        The Version must be a valid NuGet version string. https://learn.microsoft.com/en-us/nuget/concepts/package-versioning?tabs=semver20sort
+        
+        The SDK will append the last known commit hash to the version if your project is under source control.
         -->
         <Description>This is a description of your mod.</Description>
         <Version>1.0.0-alpha</Version>
