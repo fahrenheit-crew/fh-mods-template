@@ -51,14 +51,14 @@ It's highly recommended that you always choose the latest one!
         <AssemblyTitle>Template Mod</AssemblyTitle>
         <Product>Template Mod</Product>
 
-		<!--
+        <!--
         The Description and Version will appear in the manifest. 
 		The Version must be a valid NuGet version string. https://learn.microsoft.com/en-us/nuget/concepts/package-versioning?tabs=semver20sort
 		
 		The SDK will append the last known commit hash to the version if your project is under source control.
         -->
-		<Description>This is a description of your mod.</Description>
-		<Version>1.0.0-alpha</Version>
+        <Description>This is a description of your mod.</Description>
+        <Version>1.0.0-alpha</Version>
 
         <!--
         If your mod is under source control, set RepositoryUrl and RepositoryType accordingly.
