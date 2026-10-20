@@ -15,15 +15,25 @@ public class TemplateModule : FhModule {
      * to see the respective roles of the constructor and `init` method.
      */
 
-    public TemplateModule() { }
+    public TemplateModule() {
 
-    public override bool init(FhModContext mod_context, FileStream global_state_file) { return true; }
+    }
+
+    public override bool init(FhModContext mod_context, FileStream global_state_file) {
+        return true;
+    }
 
     /* [fkelava 20/10/26 14:44]
      * Read the State article at https://github.com/fahrenheit-crew/fahrenheit/wiki/State
      * to see how and why to take advantage of local state.
      */
 
-    public override void load_local_state(FileStream? local_state_file, FhLocalStateInfo local_state_info) { }
-    public override void save_local_state(FileStream  local_state_file)                                    { }
+    public override void load_local_state(FileStream local_state_file, FhLocalStateInfo local_state_info) {
+
+    }
+
+    public override void save_local_state(FileStream local_state_file) {
+
+    }
+
 }
